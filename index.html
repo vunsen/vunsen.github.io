@@ -337,7 +337,7 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -348,6 +348,10 @@
             background: var(--bg-card);
             border: 1px solid rgba(0, 245, 255, 0.1);
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 140px;
         }
 
         .stat-number {
