@@ -36,9 +36,13 @@ document.querySelectorAll('.card').forEach(card => {
     observer.observe(card);
 });
 
-const playerWrapper = document.getElementById('music-player-wrapper');
-const playerToggle = document.getElementById('player-toggle');
+document.addEventListener('DOMContentLoaded', () => {
+    const playerWrapper = document.getElementById('music-player-wrapper');
+    const playerToggle = document.getElementById('player-toggle');
 
-playerToggle.addEventListener('click', () => {
-    playerWrapper.classList.toggle('expanded');
+    if (playerWrapper && playerToggle) {
+        playerToggle.addEventListener('click', () => {
+            playerWrapper.classList.toggle('expanded');
+        });
+    }
 });

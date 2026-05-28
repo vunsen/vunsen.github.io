@@ -481,6 +481,9 @@ footer p {
 
 .player-content iframe {
     display: block;
+    width: 330px;
+    height: 66px;
+    border: none;
 }
 
 @media (max-width: 768px) {
