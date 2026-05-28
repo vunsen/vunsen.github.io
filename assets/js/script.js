@@ -35,3 +35,10 @@ document.querySelectorAll('.card').forEach(card => {
     card.style.transition = 'all 0.5s ease';
     observer.observe(card);
 });
+
+const playerWrapper = document.getElementById('music-player-wrapper');
+const playerToggle = document.getElementById('player-toggle');
+
+playerToggle.addEventListener('click', () => {
+    playerWrapper.classList.toggle('expanded');
+});
