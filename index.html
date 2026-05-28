@@ -337,17 +337,18 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1rem;
             margin-top: 3rem;
         }
 
         .stat-item {
             text-align: center;
-            padding: 2rem;
+            padding: 1.5rem 1rem;
             background: var(--bg-card);
             border: 1px solid rgba(0, 245, 255, 0.1);
             border-radius: 10px;
+            min-width: 0;
         }
 
         .stat-number {
