@@ -61,7 +61,7 @@
             text-transform: uppercase;
             letter-spacing: 0.2em;
             color: var(--primary-color);
-            text-shadow: 
+            text-shadow:
                 0 0 10px var(--primary-color),
                 0 0 20px var(--primary-color),
                 0 0 40px var(--primary-color),
@@ -185,7 +185,7 @@
         }
 
         .btn:hover {
-            box-shadow: 
+            box-shadow:
                 0 0 10px var(--primary-color),
                 0 0 20px var(--primary-color),
                 0 0 40px var(--primary-color);
@@ -198,7 +198,7 @@
         }
 
         .btn-secondary:hover {
-            box-shadow: 
+            box-shadow:
                 0 0 10px var(--secondary-color),
                 0 0 20px var(--secondary-color),
                 0 0 40px var(--secondary-color);
@@ -268,7 +268,7 @@
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 
+            box-shadow:
                 0 10px 30px rgba(0, 245, 255, 0.1),
                 0 0 20px rgba(0, 245, 255, 0.05);
             border-color: rgba(0, 245, 255, 0.3);
@@ -337,18 +337,17 @@
 
         .stats {
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
             margin-top: 3rem;
         }
 
         .stat-item {
             text-align: center;
-            padding: 1.5rem 1rem;
+            padding: 1.5rem;
             background: var(--bg-card);
             border: 1px solid rgba(0, 245, 255, 0.1);
             border-radius: 10px;
-            min-width: 0;
         }
 
         .stat-number {
@@ -451,7 +450,7 @@
 </head>
 <body>
     <div class="particle-bg" id="particle-bg"></div>
-    
+
     <div class="cursor-follower" id="cursor-follower"></div>
 
     <header>
@@ -501,7 +500,7 @@
                 <div class="stat-label">GitHub Stars</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">5年</div>
+                <div class="stat-number">5 年</div>
                 <div class="stat-label">开发经验</div>
             </div>
             <div class="stat-item">
