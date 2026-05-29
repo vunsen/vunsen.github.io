@@ -19,6 +19,7 @@ body {
     background: var(--bg-dark);
     color: var(--text-primary);
     overflow-x: hidden;
+    cursor: none;
 }
 
 .particle-bg {
@@ -407,6 +408,7 @@ footer p {
     transform: translate(-50%, -50%);
     transition: all 0.1s ease;
     opacity: 0.7;
+    
 }
 
 .typing-effect {
