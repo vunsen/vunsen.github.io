@@ -3,18 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Nexus - 科技博客</title>
+    <title>Tech Nexus — 科技博客</title>
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/APlayer.min.css" />
   </head>
   <body>
-    <div class="particle-bg" id="particle-bg"></div>
-
-    <div class="cursor-follower" id="cursor-follower"></div>
-
     <header>
-      <div class="logo">TECH<span class="gradient-text">NEXUS</span></div>
+      <div class="logo">TECH<span class="accent">NEXUS</span></div>
       <nav>
         <ul>
           <li><a href="#home">首页</a></li>
@@ -24,28 +20,40 @@
           <li><a href="#contact">联系</a></li>
         </ul>
       </nav>
+      <a href="#projects" class="btn btn-primary">查看项目</a>
     </header>
 
     <section class="hero" id="home">
-      <h1 class="glitch-text">TECH NEXUS</h1>
-      <p class="typing-effect">探索未来科技，连接无限可能</p>
-      <p>致力于打造前沿技术解决方案，探索人工智能、区块链与Web3.0的无限可能</p>
-      <div>
-        <a href="#projects" class="btn">查看项目</a>
-        <a href="#blog" class="btn btn-secondary">阅读博客</a>
+      <div class="hero-text">
+        <h1>TECH NEXUS</h1>
+        <p>全栈开发者。构建高性能 Web 应用，分享 AI、区块链与 Web3 技术笔记。</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">查看项目</a>
+          <a href="#blog" class="btn btn-secondary">阅读博客</a>
+        </div>
+      </div>
+      <div class="hero-preview">
+        <div class="preview-frame">
+          <div class="preview-bar">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="preview-title">index.html</span>
+          </div>
+          <div class="preview-code">
+            <div class="line"><span class="tag">&lt;</span><span class="keyword">section</span> <span class="attr">id</span><span class="eq">=</span><span class="str">"home"</span><span class="tag">&gt;</span></div>
+            <div class="line"><span class="sp">  </span><span class="tag">&lt;</span><span class="keyword">h1</span><span class="tag">&gt;</span>TECH NEXUS<span class="tag">&lt;/</span><span class="keyword">h1</span><span class="tag">&gt;</span></div>
+            <div class="line"><span class="sp">  </span><span class="tag">&lt;</span><span class="keyword">p</span><span class="tag">&gt;</span>全栈开发者<span class="tag">&lt;/</span><span class="keyword">p</span><span class="tag">&gt;</span></div>
+            <div class="line"><span class="tag">&lt;/</span><span class="keyword">section</span><span class="tag">&gt;</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section about-section" id="about">
       <div class="about-content">
-        <h2 class="gradient-text">关于我</h2>
-        <p>
-          我是一名全栈开发者，专注于构建高性能、可扩展的Web应用。拥有多年的软件开发经验，擅长使用现代技术栈解决复杂问题。
-        </p>
-        <p>
-          热爱开源社区，积极参与各种技术项目，致力于分享知识和帮助他人成长。
-        </p>
-        <div class="tech-stack">
+        <h2>关于我</h2>
+        <p>我是一名全栈开发者，专注于构建高性能、可扩展的 Web 应用，擅长用现代技术栈解决复杂问题。</p>
+        <p>热爱开源社区，致力于分享知识、帮助他人成长。</p>
+        <div class="tech-list">
           <span class="tech-item">Python</span>
           <span class="tech-item">JavaScript</span>
           <span class="tech-item">React</span>
@@ -54,34 +62,33 @@
           <span class="tech-item">AWS</span>
         </div>
       </div>
-      <div class="stats">
-        <div class="stat-item">
-          <div class="stat-number">50+</div>
-          <div class="stat-label">项目完成</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">10K+</div>
-          <div class="stat-label">GitHub Stars</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">10年</div>
-          <div class="stat-label">开发经验</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">100+</div>
-          <div class="stat-label">技术文章</div>
+      <div class="about-figure">
+        <div class="fig-label">使用的工具</div>
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">项目完成</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10年</div>
+            <div class="stat-label">开发经验</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">技术文章</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section" id="projects">
-      <h2 class="section-title">最新项目</h2>
+      <div class="section-head">
+        <h2>最新项目</h2>
+      </div>
       <div class="cards-container">
         <div class="card">
           <h3>AI 智能助手</h3>
-          <p>
-            基于大语言模型构建的智能助手，支持多模态交互，具备自然语言理解和生成能力。
-          </p>
+          <p>基于大语言模型构建的智能助手，支持多模态交互。</p>
           <div class="card-tags">
             <span class="tag">Python</span>
             <span class="tag">OpenAI</span>
@@ -90,9 +97,7 @@
         </div>
         <div class="card">
           <h3>区块链浏览器</h3>
-          <p>
-            支持多链查询的区块链浏览器，实时追踪交易和区块信息，提供可视化数据分析。
-          </p>
+          <p>支持多链查询，实时追踪交易和区块信息，提供可视化数据分析。</p>
           <div class="card-tags">
             <span class="tag">Node.js</span>
             <span class="tag">Web3.js</span>
@@ -101,9 +106,7 @@
         </div>
         <div class="card">
           <h3>数据可视化平台</h3>
-          <p>
-            企业级数据可视化解决方案，支持多种图表类型，实时数据更新和交互式分析。
-          </p>
+          <p>企业级数据可视化方案，支持多种图表类型和实时数据更新。</p>
           <div class="card-tags">
             <span class="tag">D3.js</span>
             <span class="tag">Vue.js</span>
@@ -112,7 +115,7 @@
         </div>
         <div class="card">
           <h3>云原生微服务架构</h3>
-          <p>基于Kubernetes的微服务架构，实现高可用、弹性伸缩的分布式系统。</p>
+          <p>基于 Kubernetes 的微服务架构，实现高可用、弹性伸缩的分布式系统。</p>
           <div class="card-tags">
             <span class="tag">Kubernetes</span>
             <span class="tag">Docker</span>
@@ -121,7 +124,7 @@
         </div>
         <div class="card">
           <h3>实时协作编辑器</h3>
-          <p>支持多人实时协作的在线编辑器，基于CRDT算法实现无冲突同步。</p>
+          <p>多人实时协作的在线编辑器，基于 CRDT 算法实现无冲突同步。</p>
           <div class="card-tags">
             <span class="tag">TypeScript</span>
             <span class="tag">WebSocket</span>
@@ -141,11 +144,13 @@
     </section>
 
     <section class="section" id="blog">
-      <h2 class="section-title">最新文章</h2>
+      <div class="section-head">
+        <h2>最新文章</h2>
+      </div>
       <div class="cards-container">
         <div class="card">
           <h3>深入理解 React 18 并发模式</h3>
-          <p>探索React 18的新特性，深入理解并发模式的工作原理和最佳实践。</p>
+          <p>探索 React 18 新特性，理解并发模式的工作原理和最佳实践。</p>
           <div class="card-tags">
             <span class="tag">React</span>
             <span class="tag">JavaScript</span>
@@ -154,7 +159,7 @@
         </div>
         <div class="card">
           <h3>Docker 容器网络完全指南</h3>
-          <p>从入门到精通，全面掌握Docker容器网络的配置和优化技巧。</p>
+          <p>从入门到精通，掌握 Docker 容器网络的配置和优化技巧。</p>
           <div class="card-tags">
             <span class="tag">Docker</span>
             <span class="tag">DevOps</span>
@@ -163,7 +168,7 @@
         </div>
         <div class="card">
           <h3>大语言模型原理与实践</h3>
-          <p>从Transformer架构到实际应用，深入探讨大语言模型的技术原理。</p>
+          <p>从 Transformer 架构到实际应用，探讨大语言模型技术原理。</p>
           <div class="card-tags">
             <span class="tag">AI</span>
             <span class="tag">机器学习</span>
@@ -181,12 +186,12 @@
         <a href="mailto:hello@technexus.dev">Email</a>
       </div>
       <p>&copy; 2026 Tech Nexus. All rights reserved.</p>
-      <p class="gradient-text">Building the Future, One Line at a Time</p>
+      <p class="sig">Building the Future, One Line at a Time</p>
     </footer>
     <div id="aplayer"></div>
     <script src="assets/js/APlayer.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/Meting.min.js"></script> 
+    <script src="assets/js/Meting.min.js"></script>
     <meting-js server="netease" type="playlist" id="390460138" fixed="true" mini="true" autoplay="true" volume="1" order="random"></meting-js>
   </body>
 </html>
